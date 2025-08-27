@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Promo Locura</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <button onclick="mostrarInfo('quienes')">Quienes somos</button>
+      <button onclick="mostrarInfo('mision')">Misión</button>
+      <button onclick="mostrarInfo('vision')">Visión</button>
+      <button onclick="mostrarInfo('dedicatoria')">Dedicatoria</button>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <img src="logo.png" alt="Promo Locura" class="logo">
+      </header>
+
+      <section class="cuadros">
+        <div class="cuadro" onclick="mostrarCuadro('Ofertas')">
+          <h2>Ofertas</h2>
+          <img src="https://via.placeholder.com/150?text=Ofertas" alt="Ofertas">
+        </div>
+        <div class="cuadro" onclick="mostrarCuadro('Ropa')">
+          <h2>Ropa</h2>
+          <img src="https://via.placeholder.com/150?text=Ropa" alt="Ropa">
+        </div>
+        <div class="cuadro" onclick="mostrarCuadro('Accesorios')">
+          <h2>Accesorios</h2>
+          <img src="https://via.placeholder.com/150?text=Accesorios" alt="Accesorios">
+        </div>
+        <div class="cuadro" onclick="mostrarCuadro('Cuidado Personal')">
+          <h2>Cuidado Personal</h2>
+          <img src="https://via.placeholder.com/150?text=Cuidado+Personal" alt="Cuidado Personal">
+        </div>
+      </section>
+
+      <section id="info" class="info-box"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
